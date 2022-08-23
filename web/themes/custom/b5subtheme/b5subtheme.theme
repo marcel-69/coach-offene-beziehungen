@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * B5 subtheme theme file.
+ */
+
+ function b5subtheme_preprocess_html(&$variables) {
+   // Retrives nid for html.html.twig template.
+   if ($node = \Drupal::request()->attributes->get('node')) {
+     $variables['nid'] = $node->id();
+   }
+
+   // Adds node-id class to <body> for example class="node-42"
+   $path = \Drupal::service('path.current')->getPath();
+   $path_args = explode('/', $path);
+   if (isset($path_args[1]) && isset($path_args[2]) && ($path_args[1] == 'node') && (is_numeric($path_args[2]))) {
+     $variables['attributes']['class'][] = 'page-node-' . $path_args[2];
+   }
+
+   $current_path = \Drupal::service('path.current')->getPath();
+   $path_alias = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
+   $path_alias = ltrim($path_alias, '/');
+   $variables['attributes']['class'][] = 'path-' . \Drupal\Component\Utility\Html::cleanCssIdentifier($path_alias);
+
+   $variables['year'] = date("Y");
+ }

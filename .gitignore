@@ -1,0 +1,36 @@
+# We use the concept to deploy the core and libraries
+vendor
+web/core
+web/modules/contrib
+web/themes/contrib
+web/profiles/contrib
+private/*
+web/cache
+web/libraries/flexslider
+web/robots.txt
+web/.htaccess
+
+
+# Ignore Drupal's settings.php
+web/sites/*/settings.php
+# Ignore Drupal's file directory
+web/sites/*/files
+
+
+# Ignore dump files
+dumps/*
+
+#ignore temp directories
+tmp
+
+.DS_store
+
+web/.csslintrc
+web/.eslintignore
+web/.eslintrc.json
+web/.ht.router.php
+web/.htaccess
+web/INSTALL.txt
+web/README.txt
+web/robots.txt
+web/web.config

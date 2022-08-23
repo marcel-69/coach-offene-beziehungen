@@ -1,2 +1,2 @@
-# coach-offene-beziehungen
-Coaching-Offene-Beziehungen.de
+# ip-coaching
+Intensiv Paartherapie Coaching

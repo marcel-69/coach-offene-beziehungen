@@ -1,0 +1,23 @@
+{%
+set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ? 'paragraph--unpublished'
+]
+%}
+{{ attach_library('b5subtheme/collapsible') }}
+{% block paragraph %}
+<div{{ attributes.addClass(classes) }}>
+{% block content %}
+  <div id="collapse-container-{{ paragraph.id() }}" class="collapse-container closed">
+    <h3 id="{{ paragraph.id() }}" class="collapse-header">
+      <span id="collapse-icon-{{ paragraph.id() }}" class="collaps-plus">&nbsp;</span>
+      {{ content.field_headline.0 }}</h3>
+    <div id="collapse-content-{{ paragraph.id() }}" class="collapse-content">
+      {{ content.field_content.0 }}
+    </div>
+  </div>
+{% endblock %}
+</div>
+{% endblock paragraph %}

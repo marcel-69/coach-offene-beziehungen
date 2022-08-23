@@ -1,0 +1,53 @@
+/*
+ * Custom collapsible container for Paragraphs
+ * @see
+ * - js/collapsible.js
+ * - template.php businessrt_preprocess_entity()
+ * - template.php businessrt_process_page()
+ */
+.collaps-container {
+    margin-bottom: 10px;
+}
+.collapse-content {
+    display: none;
+    padding: 5px;
+    }
+.collaps-plus {
+    background-image: url("../images/plus16.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding: 0 10px;
+    margin: 0 0 0 5px;
+}
+.collaps-minus {
+    background-image: url("../images/minus16.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding: 0 10px;
+    margin: 0 0 0 5px;
+}
+.collapse-header {
+    padding: 5px;
+    background-color: #e7e9d2;
+    background-image: linear-gradient(bottom, #e7e9d2 14%, #fff 70%);
+    background-image: -o-linear-gradient(bottom, #e7e9d2 14%, #fff 70%);
+    background-image: -moz-linear-gradient(bottom, #e7e9d2 14%, #fff 70%);
+    background-image: -webkit-linear-gradient(bottom, #e7e9d2 14%, #fff 70%);
+    background-image: -ms-linear-gradient(bottom, #e7e9d2 14%, #fff 70%);
+    border: 1px solid #a5b342;
+}
+.collapse-header.open {
+    background: #fff;
+}
+.collapse-header:hover {
+    padding: 5px;
+    background-color: #fff;
+    background-image: linear-gradient(bottom, #fff 14%, #fff 70%);
+    background-image: -o-linear-gradient(bottom, #fff 14%, #fff 70%);
+    background-image: -moz-linear-gradient(bottom, #fff 14%, #fff 70%);
+    background-image: -webkit-linear-gradient(bottom, #fff 14%, #fff 70%);
+    background-image: -ms-linear-gradient(bottom, #fff 14%, #fff 70%);
+    border-left: 1px solid #a5b342;
+    border-right: 1px solid #a5b342;
+    border-bottom: 1px solid #a5b342;
+}

@@ -1,0 +1,18 @@
+global-styling:
+  css:
+    theme:
+      ../../../../themes/contrib/bootstrap5/css/style.css: {}
+      css/style.css: {}
+
+fonts:
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet': { type: external }
+      '//fonts.googleapis.com/css?family=Oswald:wght@300;400&display=swap" rel="stylesheet': { type: external }
+
+collapsible:
+  js:
+    js/collapsible.js: {}
+  css:
+    component:
+      css/collapsible.css: {}
