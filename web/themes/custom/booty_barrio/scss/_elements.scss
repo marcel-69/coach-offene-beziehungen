@@ -310,17 +310,23 @@ table.myown {
   }
 }
 
-
-
 .first-seal {
-  width: 100px;
+  width: 240px;
   height: 100px;
   position: absolute;
   top: 35px;
-  right: 20px;
+  right: -15px;
   img.seal {
     max-width: 100px;
     height: auto;
+    display: inline-block;
+    &.nr1 {
+      margin-right: 15px;
+      }
+    &.nr2 {
+      position: relative;
+      top: 10px;
+      }
     }
   }
 
