@@ -486,6 +486,34 @@ blockquote {
     }
   }
 
+.crtfct-wrapper::after {
+  display: table;
+  content: ' ';
+  clear: both;
+  }
+
+.crtfct-large {
+  max-width: 620px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #cccccc;
+    }
+  }
+
+.crtfct {
+  max-width: 300px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #cccccc;
+    }
+  }
 
 /*  *****  ACT NOW! BUTTONS  *****  */
 p.scrolltop {
