@@ -26,6 +26,7 @@
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4",
+        "drupal/eu_cookie_compliance": "^1.22",
         "drupal/field_group": "^3.2",
         "drupal/flexslider": "^2.0",
         "drupal/jquery_ui_datepicker": "^1.3",

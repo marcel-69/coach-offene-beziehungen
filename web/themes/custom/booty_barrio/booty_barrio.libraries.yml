@@ -6,6 +6,7 @@ global-styling:
     component:
       css/style.css: {}
       css/colors.css: {}
+      css/cookie-banner.css: {}
 fonts:
   css:
     theme:

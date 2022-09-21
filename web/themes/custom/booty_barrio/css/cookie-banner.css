@@ -1,0 +1,115 @@
+#sliding-popup {
+    width: 100%;
+    height: 100%;
+    background: rgba(000, 000, 000, 0.4);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.eu-cookie-compliance-banner {
+    width: 550px;
+    background: #FFFFFF;
+    margin: auto;
+    margin-top: 10%;
+    padding: 40px 20px;
+}
+
+.eu-cookie-inline-header {
+    color: #5e6815;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+.eu-cookie-compliance-message {
+    float: none;
+    clear: both;
+    max-width: 100%;
+}
+.eu-cookie-text {
+    text-align: justify;
+}
+
+.eu-cookie-compliance-categories {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.eu-cookie-buttons {
+    float: none;
+    max-width: none;
+}
+.eu-cookie-buttons button {
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+}
+.eu-cookie-preference-button {
+    display: inline-block;
+    background-color: #bbb;
+}
+.eu-cookie-default-button {
+    display: inline-block;
+    margin-left: 20px;
+    background-color: #7b8531;
+    float: right;
+}
+
+@media screen and (max-width: 768px) {
+    #sliding-popup {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .eu-cookie-compliance-banner {
+        width: 550px;
+        background: #FFFFFF;
+        margin: auto;
+        margin-top: 0;
+        padding: 20px 10px;
+    }
+    .eu-cookie-compliance-banner {
+        width: 100%;
+    }
+    .eu-cookie-buttons {
+       width: 100%;
+       text-align: center;
+        float: none;
+    }
+    .eu-cookie-buttons button {
+        display: block;
+        margin-left: 0;
+        width: 100%;
+    }
+    .eu-cookie-preference-button {
+        display: block;
+        margin: auto;
+    }
+    .eu-cookie-default-button {
+        display: block;
+        margin: 0;
+        margin-top: 10px;
+        float: none;
+    }
+    .eu-cookie-inline-header {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .eu-cookie-compliance-message {
+        font-size: 13px;
+    }
+    .eu-cookie-compliance-categories {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+/*
+ * Hide Button Datenschutzeinstellungen.
+ */
+.eu-cookie-withdraw-tab {
+  display: none;
+}
