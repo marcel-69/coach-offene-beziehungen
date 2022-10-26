@@ -7,11 +7,6 @@ global-styling:
       css/style.css: {}
       css/colors.css: {}
       css/cookie-banner.css: {}
-fonts:
-  css:
-    theme:
-      '//fonts.googleapis.com/css?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet': { type: external }
-      '//fonts.googleapis.com/css?family=Oswald:wght@300;400&display=swap" rel="stylesheet': { type: external }
 bootstrap:
   js:
     /libraries/popper.js/dist/umd/popper.min.js: { weight: -49 }
