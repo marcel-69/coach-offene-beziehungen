@@ -603,11 +603,6 @@ p.scrolltop {
 /*  *****  /ACT NOW! BUTTONS  ****  */
 
 form.webform-submission-form {
-  .js-form-required:after {
-    content: ' *';
-    color: $nl-red;
-    font-size: 1.4rem;
-    }
   button.webform-button--submit.btn-primary {
     background-color: $light-green;
     border: none;
