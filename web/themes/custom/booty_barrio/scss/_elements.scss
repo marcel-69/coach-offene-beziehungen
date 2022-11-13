@@ -703,3 +703,19 @@ a.rg-button {
   }
 
   /*  ***** /ZWEITE SIDEBAR  ****  */
+
+.kntkt-infos-wrapper {
+  text-align: right;
+  width: 100%;
+  margin-bottom: 20px;
+  .kntkt-info {
+    padding: 22px 17px 22px 17px;
+    width: 250px;
+    height: 185px;
+    background-color: #e7e9d2;
+    text-align: left;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 20px;
+    }
+  }
