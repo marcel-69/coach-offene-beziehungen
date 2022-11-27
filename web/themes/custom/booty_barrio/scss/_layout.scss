@@ -8,6 +8,10 @@
   display: block;
   }
 
+.navbar {
+  padding-bottom: 0;
+  }
+
 #navbar-top {
   background-color: transparent !important;
   }
@@ -147,44 +151,78 @@ body {
     ul {
       li {
         margin-right: 14px;
-        &:last-child {
-        margin-right: 0;
+        margin-left: 14px;
+
+        .nav-link {
+        /* padding: 0 10px 2px 10px !important; */
+        display: block !important;
+        padding: 0 !important;
+        /* border: 1px solid red; */
+        min-height: 35px;
         }
+        .dropdown-toggle:after {
+          border-top: 4px dashed;
+          border-right: 4px solid transparent;
+          border-left: 4px solid transparent;
+          }
         a,
         span.nav-link {
           font-family: Oswald;
-          display: inline;
+          display: inline-block;
           font-size: 1.3rem;
           color: #444E01;
           font-style: normal;
           }
         span.nav-link {
           cursor: pointer;
+          &:hover {
+            border-bottom: 3px solid #7e8b19;
+            }
           }
         a.is-active,
         a:hover {
           color: $light-green;
+          border-bottom: 3px solid #7e8b19;
           }
         }
       ul.dropdown-menu {
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        border-radius: 0;
-        border: none;
+        min-width: 200px;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        text-align: left;
+        list-style: none;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ccc;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-top: none;
+        -webkit-box-shadow: 6px 8px 4px 0px rgba(0,0,0,0.20);
+        -moz-box-shadow: 6px 8px 4px 0px rgba(0,0,0,0.20);
+        box-shadow: 6px 8px 4px 0px rgba(0,0,0,0.20);
         padding-bottom: 0;
         li {
+          padding: 0;
+          margin: 0;
+          min-height: 43px;
           &.active,
           &:hover {
-            background-color: #e7e9d2;
+            background-color: white;
             }
           a {
             text-decoration: none;
+            font-size: 1.1rem;
+            padding: 8px 14px 5px 14px;
+            border-top: 1px solid #7b8531;
+            display: block;
             }
           }
         }
       }
     }
-
 
 
 /*  **********  /MAIN MENU  *********  */
