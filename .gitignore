@@ -13,6 +13,7 @@ web/.htaccess
 
 # Ignore Drupal's settings.php
 web/sites/*/settings.php
+web/sites/default/settings.php
 # Ignore Drupal's file directory
 web/sites/*/files
 
@@ -34,3 +35,4 @@ web/INSTALL.txt
 web/README.txt
 web/robots.txt
 web/web.config
+/.gitattributes
